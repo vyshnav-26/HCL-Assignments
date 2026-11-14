@@ -15,6 +15,6 @@ class Main{
             account = new CurrentAccount(accountNumber, balance, overdraftLimit);
         }
 
-        System.out.print(account.calculateFinalBalance());
+        System.out.printf("%2f",account.calculateFinalBalance());
     }
 }
