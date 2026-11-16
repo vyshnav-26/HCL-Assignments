@@ -15,8 +15,8 @@ class Main{
             pay = new WalletPayment();
         }
         double fee = pay.calculateFee(amount);
-        System.out.println("Payment Amount: "+amount);
-        System.out.println("Transaction Fee: "+fee);
-        System.out.println("Final Amount: "+(amount + fee));
+        System.out.printf("Payment Amount: %.2f%n",amount);
+        System.out.printf("Transaction Fee: %.2f%n",fee);
+        System.out.printf("Final Amount: %.2f%n",(amount + fee));
     }
 }
