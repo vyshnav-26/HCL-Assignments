@@ -4,6 +4,7 @@ public class CurrentAccount extends BankAccount{
         super(accountNumber, balance);
         this.overdraftLimit = overdraftLimit;
     }
+    @Override 
     public double calculateFinalBalance(){
         return (balance + overdraftLimit);
     }

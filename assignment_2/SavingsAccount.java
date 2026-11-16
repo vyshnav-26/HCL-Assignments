@@ -4,6 +4,7 @@ public class SavingsAccount extends BankAccount{
         super(accountNumber, balance);
         this.interestRate = interestRate;
     }
+    @Override 
     public double calculateFinalBalance(){
         return (balance + (balance * interestRate / 100));
     }
