@@ -1,7 +1,8 @@
 public class GroceryProduct extends Product{
     double amount;
     double discount = 5.0;
-    public double claculateDiscount(){
+    @Override
+    public double calculateDiscount(){
         amount = (price * discount) / 100;
         return amount;
     }
